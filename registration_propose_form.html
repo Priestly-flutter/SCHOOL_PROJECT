@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PROPOSE LOGIN FORM</title>
+        <link rel="stylesheet" type="text/css" href="stlye.registration.css">
+    </head>
+    <body>
+        <form action="registration.php" method="POST">
+            <div class="register_student">
+            ENTER STUDENT NAME: <input type="text" name="student_name" id="student_name"required/><br>
+            STUDENT DATE OF BIRTH: <input type="date" name="student_date_of_birth" id="date_of_birth" required/><br>
+            SEX: <input type="text" name="student_sex" id="sex" required><br>
+            EMAIL: <input type="email" name="student_email" id="email" required><br>
+            PHONE NUMBER: <input type="tel" name="student_phone_number" id="phone_number" required><br>
+            <div class="dropdown">
+                EXAM
+                <div class="dropdown-content">
+                    <input type="radio" name="EXAM" id="gce_Alevel">GCE-ALEVEL<br>
+                    <input type="radio" name="EXAM" id="gce_Alevel">GCE-ALEVEL<br>
+                    <input type="radio" name="EXAM" id="gce_Alevel">GCE-ALEVEL<br>
+                    <input type="radio" name="EXAM" id="gce_Alevel">GCE-ALEVEL<br>
+                    <input type="radio" name="EXAM" id="gce_Alevel">GCE-ALEVEL<br>
+                    <input type="radio" name="EXAM" id="gce_Alevel">GCE-ALEVEL<br>
+                    <input type="radio" name="EXAM" id="gce_Alevel">GCE-ALEVEL<br>
+                    <input type="radio" name="EXAM" id="gce_Alevel">GCE-ALEVEL<br>
+                    <input type="radio" name="EXAM" id="gce_Alevel">GCE-ALEVEL<br>
+                    <input type="radio" name="EXAM" id="gce_Alevel">GCE-ALEVEL<br>
+                </div>
+                <p id="xam"></p>
+                <script type="text/javascript">
+                    var exam = document.getElementsByName("EXAM");
+                    document.getElementById("xam").innerHTML = exam;
+                </script>
+            </div>
+            NUMBER OF SUBJECTS: <input type="number" name="number_of_subjects" id="number_of_subjects" required><br>
+            SUBJECTS REGISTERED: <input type="checkbox" name="subjects" id="subjects_registered"/><br>
+            <input type="submit" value="SUBMIT"/>
+            </div>
+        </form>
+    </body>
+</html>

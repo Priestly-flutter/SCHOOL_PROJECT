@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> schools </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link href="uicons-regular-straight\svg" rel="icon">-->
+    <link href="uicons-regular-straight\css\uicons-regular-straight.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-5.2.1-dist\css\bootstrap.css">
+    <link rel="stylesheet" href="style2.css">
+    <script type="text/javascript">
+        function dismiss(){
+            var x = document.getElementById("hide");
+            if(x.style.display==="block"){
+                x.style.display="none"
+                var full = document.getElementById("container");
+                full.style.width='100vh'
+            }
+        }
+
+        function search(){
+            var search = document.getElementById("searchMe")
+        }
+    </script>
+</head>
+<body>
+<div class="side-menu" id="hide" style="display:block;">
+    <div class="user-name">
+        <button style="float: left; border:none; background-color: inherit;" onclick="dismiss()"> <i class="fi-rs-arrow-alt-circle-left" style="font-size: xx-large"></i></button><h1>ADMIN</h1>
+
+    </div>
+    <ul>
+        <li><i class="fi-rs-dashboard" ><a href="school_page.html" style="color: inherit"> Dashboard</a></i></li>
+        <li><i class="fi-rs-school" ><a href="schools.html" style="color: inherit"> School </a></i></li>
+        <li><i class="fi-rs-book" ><a href="subject.html" style="color: inherit"> Subjects</a></i></li>
+        <li><i class="fi-rs-test"><a href="Exams.html" style="color: inherit"> Exams</a></i></li>
+        <li><i class="fi-rs-settings" ><a href="settings.html" style="color: inherit"> Settings</a></i></li>
+        <li><i class="fi-rs-registered"><a href="registration.html" style="color: inherit"> Register</a></i></li>
+        <li><i class="fi-rs-ballot" ><a href="results.html" style="color: inherit"> Results</a></i></li>
+        <li><i class="fi-rs-log-out"><button onclick="LogOut()" style="border:none; background: inherit;color: inherit"> Log Out</button></i></li>
+    </ul>
+</div>
+<div class="container" id="container">
+    <div class="header">
+        <div class="nav">
+            <div class="search">
+                <input type="text" placeholder="Search.." id="searchMe">
+                <button type="search" onclick="search()"><i class="fi-rs-search" ></i></button>
+            </div>
+            <div class="user">
+                <!--This image will be replaced with the notification image-->
+                <a href="#" class="btn"><i class="fi-rs-test" style="font-size: large;"> Add EXAM</i></a>
+                <div class="img-case">
+                    <!--This image will be replaced with the Admin image-->
+                    <img src="585-5850662_x-button-png-home-button-for-website-png.png" style="border-radius: 50%;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--content in this field will be displayed in a table -->
+    <div class="content">
+        <div class="content-2">
+            <div class="school_details">
+                <div class="title"><h1>EXAMINATION MANAGEMENT</h1></div>
+                <div class="cards">
+                    <div class="card">
+                        <h3><a href="GCE_O_LEVEL.html">GCE O-LEVEL</a></h3>
+                    </div>
+                    <div class="card">
+                        <h3><a href="GCE_A_LEVEL.html">GCE A-LEVEL</a></h3>
+                    </div>
+                    <div class="card">
+                        <h3><a href="BEPC.html">BEPC</a></h3>
+                    </div>
+                    <div class="card">
+                        <h3><a href="PROBATOIRE.html">PROBATOIRE</a></h3>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <h3><a href="BACCALAUREAT.html">BACCALAUREAT</a></h3>
+                    </div>
+                    <div class="card">
+                        <h3><a href="CAPIEMP.html">CAPIEMP</a></h3>
+                    </div>
+                    <div class="card">
+                        <h3><a href="CAPIET.html">CAPIET</a></h3>
+                    </div>
+                    <div class="card">
+                        <h3><a href="CAP_INDUSTRIAL.html">CAP-INDUSTRIAL</a></h3>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <h3><a href="CAP_TERTIARY.html">CAP-TERTIARY</a></h3>
+                    </div>
+                    <div class="card">
+                        <h3><a href="ITVE_INDUSTRIAL.html">ITVE-INDUSTRIAL</a></h3>
+                    </div>
+                    <div class="card">
+                        <h3><a href="ITVE_TERTIARY.html">ITVE-TERTIARY</a></h3>
+                    </div>
+                    <div class="card">
+                        <h3><a href="ATVE_INDUSTRIAL.html">ATVE-INDUSTRIAL</a></h3>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <h3><a href="ATVE_TERIARY.html">ATVE-TERTIARY</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<--!THIS IS WHERE I'LL CONTINUE TOMOROW-->
+</html>

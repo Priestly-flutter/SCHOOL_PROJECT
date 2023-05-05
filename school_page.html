@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ADMIN PAGE</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="uicons-regular-straight\svg" rel="icon">
+        <link href="uicons-regular-straight\css\uicons-regular-straight.css" rel="stylesheet">
+        <link rel="stylesheet" href="bootstrap-5.2.1-dist\css\bootstrap.css">
+        <link rel="stylesheet" href="style2.css">
+        <link rel="script" href="function.js">
+        <script>
+            function dismiss(){
+                var x = document.getElementById("hide");
+                if(x.style.display == 'block'){
+                    x.style.display='none';
+                    container=document.getElementsByClassName('container');
+                    //container.style.width='100%';
+                }
+                else{
+                    x.style.display='block'
+                }
+            }
+        </script>
+
+    </head>
+    <body>
+       <div class="side-menu" id="hide" style="display:block;">
+           <div class="user-name">
+                <button style="float: left; border:none; background-color: inherit;" onclick="dismiss()"> <i class="fi-rs-arrow-alt-circle-left" style="font-size: xx-large; "></i></button><h1>ADMIN</h1>
+
+           </div>
+           <ul>
+               <li><i class="fi-rs-dashboard" alt="dashboard"><a href="school_page.html" style="color: inherit"> Dashboard</a></i></li>
+               <li><i class="fi-rs-school" alt="school"><a href="schools.html" style="color: inherit"> School </a></i></li>
+               <li><i class="fi-rs-book" alt=""><a href="subject.html" style="color: inherit"> Subjects</a></i></li>
+               <li><i class="fi-rs-test" alt=""><a href="Exams.html" style="color: inherit"> Exams</a></i></li>
+               <li><i class="fi-rs-settings" alt=""><a href="settings.html" style="color: inherit"> Settings</a></i></li>
+               <li><i class="fi-rs-registered" alt=""><a href="registration.html" style="color: inherit"> Register</a></i></li>
+               <li><i class="fi-rs-money-bills" alt=""><a href="finance.html" style="color: inherit"> Finance</a></i></li>
+               <li><i class="fi-rs-ballot" alt=""><a href="results.html" style="color: inherit"> Results</a></i></li>
+               <li><i class="fi-rs-log-out"><button onclick="LogOut()" style="border:none; background: inherit;color: inherit"> Log Out</button></i></li>
+           </ul>
+       </div>
+       <div class="container">
+           <div class="header">
+               <div class="nav">
+                   <div class="search">
+                       <input type="text" placeholder="Search..">
+                       <button type="search"><i class="fi-rs-search" alt=""></i></button>
+                   </div>
+                   <div class="user">
+                       <!--This image will be replaced with the notification image-->
+                       <a href="#" class="btn"><i class="fi-rs-user-add" alt="" style="font-size: large;"> Add New</i></a>
+                       <button class="btn" id="mail" style="border-radius: 50%;"><i class="fi-rs-envelope" style="font-size: large;"></i> </button>
+                       <div class="img-case">
+                           <!--This image will be replaces with the Admin image-->
+                           <img src="585-5850662_x-button-png-home-button-for-website-png.png" alt=""  style="border-radius: 50%;">
+                       </div>
+                   </div>
+               </div>
+           </div>
+                <div class="content">
+                     <div class="cards">
+                         <div class="card">
+                             <div class="box">
+                                 <h1>2194</h1>
+                                 <h3><a href="student.html" style="color: #0f5132">Students</a></h3>
+                            </div>
+                             <div class="icon-case">
+                               <!--WE will replace this image with a school icon image-->
+                                    <i class="fi-rs-user" alt="" style="font-size: xx-large;float: left"></i>
+                             </div>
+                           </div>
+                           <div class="card">
+                            <div class="box">
+                                <h1>2194</h1>
+                                <h3><a href="schools.html" style="text-space: 3px;">Schools</a></h3>
+                            </div>
+                            <div class="icon-case">
+                            <!--WE will replace this image with a school icon image-->
+                                <i class="fi-rs-school" alt="" style="font-size: xx-large;float: left"></i>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="box">
+                                <h1>2194</h1>
+                                <h3><a href="results.html" style="color: chocolate">Results</a></h3>
+                            </div>
+                                <div class="icon-case">
+                                <!--WE will replace this image with a school icon image-->
+                                    <i class="fi-rs-ballot" alt="" style="font-size: xx-large;float: left"></i>
+                                 </div>
+                            </div>
+                        <div class="card">
+                            <div class="box">
+                                <h1>2194</h1>
+                                <h3><a href="Exams.html" style="color: #dc3545">Exams</a></h3>
+                            </div>
+                            <div class="icon-case">
+                            <!--WE will replace this image with a school icon image-->
+                                <i class="fi-rs-test" alt="" style="font-size: xx-large;float: left"></i>
+                             </div>
+                         </div>
+                </div>
+                <div class="content-2">
+                    <div class="recent-student">
+                        <div class="title">
+                            <h2>SPECIAL-CASE-STUDENT</h2>
+                            <a href="#" class="btn">VALIDATE ALL</a>
+                        </div>
+                        <table id="recent_students">
+                            <tr>
+                                <th style="text-align: center">ID</th>
+                                <th style="text-align: center">NAME</th>
+                                <th style="text-align: center">EXAM</th>
+                                <th style="text-align: center">Number of subjects</th>
+                                <th style="text-align: center">Time</th>
+                                <th style="text-align: center">Validation state</th>
+                                <th style="text-align: center">Suspension</th>
+                            </tr>
+                            <tr>
+                                <td>0001</td>
+                                <td>JATO PRIESTLY</td>
+                                <td>GCE A-level</td>
+                                <td id="number_subject" style="text-align: center;">4</td>
+                                <td id="time" style="text-align: center">4:00pm</td>
+                                <td><a href="#" class="btn" id="pending">PENDING</a></td>
+                            </tr>
+                            <tr>
+                                <td>0001</td>
+                                <td>JATO PRIESTLY</td>
+                                <td>GCE A-level</td>
+                                <td id="number_subject" style="text-align: center;">4</td>
+                                <td id="time" style="text-align: center">4:00pm</td>
+                                <td><a href="#" class="btn" id="pending">PENDING</a></td>
+                            </tr>
+                            <tr>
+                                <td>0001</td>
+                                <td>JATO PRIESTLY</td>
+                                <td>GCE A-level</td>
+                                <td id="number_subject" style="text-align: center;">4</td>
+                                <td id="time" style="text-align: center">4:00pm</td>
+                                <td><a href="#" class="btn" id="pending">PENDING</a></td>
+                            </tr>
+                            <tr>
+                                <td>0001</td>
+                                <td>JATO PRIESTLY</td>
+                                <td>GCE A-level</td>
+                                <td id="number_subject" style="text-align: center;">4</td>
+                                <td id="time" style="text-align: center">4:00pm</td>
+                                <td><a href="#" class="btn" id="pending">PENDING</a></td>
+                            </tr>
+                            <tr>
+                                <td>0001</td>
+                                <td>JATO PRIESTLY</td>
+                                <td>GCE A-level</td>
+                                <td id="number_subject" style="text-align: center;">4</td>
+                                <td id="time" style="text-align: center">4:00pm</td>
+                                <td><a href="#" class="btn" id="pending">PENDING</a></td>
+                            </tr>
+                            <tr>
+                                <td>0001</td>
+                                <td>JATO PRIESTLY</td>
+                                <td>GCE A-level</td>
+                                <td id="number_subject" style="text-align: center;">4</td>
+                                <td id="time" style="text-align: center">4:00pm</td>
+                                <td><a href="#" class="btn" id="pending">PENDING</a></td>
+                            </tr>
+                            <tr>
+                                <td>0001</td>
+                                <td>JATO PRIESTLY</td>
+                                <td>GCE A-level</td>
+                                <td id="number_subject" style="text-align: center;">4</td>
+                                <td id="time" style="text-align: center">4:00pm</td>
+                                <td><a href="#" class="btn" id="pending">PENDING</a></td>
+                            </tr>
+                            <tr>
+                                <td>0001</td>
+                                <td>JATO PRIESTLY</td>
+                                <td>GCE A-level</td>
+                                <td id="number_subject" style="text-align: center;">4</td>
+                                <td id="time" style="text-align: center">4:00pm</td>
+                                <td><a href="#" class="btn" id="pending">PENDING</a></td>
+                            </tr>
+                            <tr>
+                                <td>0001</td>
+                                <td>JATO PRIESTLY</td>
+                                <td>GCE A-level</td>
+                                <td id="number_subject" style="text-align: center;">4</td>
+                                <td id="time" style="text-align: center">4:00pm</td>
+                                <td><a href="#" class="btn" id="pending">PENDING</a></td>
+                            </tr>
+                            <tr>
+                                <td>0001</td>
+                                <td>JATO PRIESTLY</td>
+                                <td>GCE A-level</td>
+                                <td id="number_subject" style="text-align: center;">4</td>
+                                <td id="time" style="text-align: center">4:00pm</td>
+                                <td><a href="#" class="btn" id="pending">PENDING</a></td>
+                            </tr>
+                            <tr>
+                                <td>0001</td>
+                                <td>JATO PRIESTLY</td>
+                                <td>GCE A-level</td>
+                                <td id="number_subject" style="text-align: center;">4</td>
+                                <td id="time" style="text-align: center">4:00pm</td>
+                                <td><a href="#" class="btn" id="pending">PENDING</a></td>
+                            </tr>
+                            <script type="text/javascript">
+                
+                            </script>
+                        </table>
+                    </div>
+                </div>
+           </div>
+       </div>
+    </body>
+
+</html>
